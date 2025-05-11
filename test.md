@@ -4,6 +4,6 @@ Bleh.
 
 Wow cool things.
 
-Very interesting, but different.
+Very stupid, but different.
 
 Lol
