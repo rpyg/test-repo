@@ -4,6 +4,6 @@ Bleh!
 
 Wow cool things.
 
-Very cool, but different.
+Very interesting, but different.
 
 Asd.
