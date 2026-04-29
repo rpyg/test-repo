@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-slim
     steps:
       - run: |
-        echo merge group! sleeping for 1 min
+        echo merge group, sleeping for 1 min
         sleep 60
         echo done sleeping
