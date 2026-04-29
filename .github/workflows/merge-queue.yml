@@ -1,14 +1,13 @@
-name: CI
+name: Merge queue
 
 on:
-  pull_request:
+  merge_group:
 
 jobs:
   nothing:
     runs-on: ubuntu-slim
     steps:
       - run: |
-        echo sleeping for 1 min
+        echo merge group! sleeping for 1 min
         sleep 60
         echo done sleeping
-
