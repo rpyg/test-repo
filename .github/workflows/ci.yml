@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-slim
     steps:
       - run: |
-        echo sleeping for 1 min
+        echo "sleeping for 1 min"
         sleep 60
-        echo done sleeping
+        echo "done sleeping"
