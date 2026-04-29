@@ -13,4 +13,6 @@ jobs:
     steps:
       - name: sleep
         run: |
-          exit 1
+          echo "merge queue sleeping for 1 min"
+          sleep 60
+          echo "done sleeping"
