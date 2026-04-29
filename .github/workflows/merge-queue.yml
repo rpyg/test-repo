@@ -7,7 +7,8 @@ jobs:
   nothing:
     runs-on: ubuntu-slim
     steps:
-      - run: |
-        echo "merge group, sleeping for 1 min"
-        sleep 60
-        echo "done sleeping"
+      - name: sleep
+        run: |
+          echo "merge queue sleeping for 1 min"
+          sleep 60
+          echo "done sleeping"
