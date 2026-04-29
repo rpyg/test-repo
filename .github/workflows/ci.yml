@@ -1,0 +1,11 @@
+name: CI
+
+on:
+  pull_request:
+
+jobs:
+  nothing:
+    runs-on: ubuntu-slim
+    steps:
+      - run: echo "nothing to see here"
+
