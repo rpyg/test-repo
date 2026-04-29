@@ -1,17 +1,16 @@
 name: Merge queue
-# Needs to be added to the "required check" list on the repo settings
 
 on:
-  pull_request: # needed for merge group to work
+  pull_request: # needed for merge queue to even pick this job up
   merge_group:
 
 jobs:
-  nothing:  # name is the same to CI one! This way we can require chheck by name and it works
+  # name is the same to CI one! This way we can require chheck by name and it works
+  # Needs to be added to the "required check" list on the repo settings (after running once)
+  nothing:
     if: github.event_name == 'merge_group'  # so it actually does not run on normal CI
     runs-on: ubuntu-slim
     steps:
       - name: sleep
         run: |
-          echo "merge queue sleeping for 1 min"
-          sleep 60
-          echo "done sleeping"
+          exit 1
